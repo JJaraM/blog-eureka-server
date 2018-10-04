@@ -9,7 +9,6 @@ eureka:
   server:
     response-cache-update-interval-ms: 3600000
     eviction-interval-timer-in-ms: 3600000
-    enableSelfPreservation: false
   instance:
     hostname: localhost
   client:
