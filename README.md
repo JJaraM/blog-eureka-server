@@ -1,5 +1,5 @@
 # Spring Cloud Netflix Eureka
 
 # How to run 
-http://localhost:8761/
+http://localhost:5000/
 
