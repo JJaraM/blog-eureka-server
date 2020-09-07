@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableDiscoveryClient
 @EnableAdminServer
+@SpringBootApplication
 public class EurekaApplication {
 
 	public static void main(String[] args) {
