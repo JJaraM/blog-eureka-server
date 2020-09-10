@@ -2,18 +2,17 @@ server:
   port: ${PORT:5000}
 
 spring:
-    boot:
-      admin:
-        client:
-          instance:
-            metadata:
-              user:
-                name: "admin"
-                password: "pass"
+  application:
+    name: "Server Admin"
+  boot:
+    admin:
+      ui:
+        title: "Server Admin"
 
-management:
   security:
-    enabled: false
+    user:
+      name: ${ADMIN_SECURITY_NAME}
+      password: ${ADMIN_SECURITY_PASSWORD}
 
 eureka:
   server:
