@@ -11,7 +11,10 @@ spring:
                 name: "admin"
                 password: "pass"
 
-
+management:
+  security:
+    enabled: false
+    
 eureka:
   server:
     response-cache-update-interval-ms: 3600000
