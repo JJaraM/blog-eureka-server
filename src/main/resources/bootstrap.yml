@@ -1,13 +1,12 @@
-server:
-  port: ${PORT:5000}
-
 spring:
+  profiles:
+    active:
+      - eureka-server
   cloud:
     services:
       registrationMethod: route
     config:
-      name:
-        - eureka-server
       enabled: true
       uri: https://pr-microservice-config-server.herokuapp.com
+      label: master
       fail-fast: true
