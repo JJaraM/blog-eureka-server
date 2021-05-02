@@ -2,6 +2,7 @@ spring:
   profiles:
     active:
       - eureka-server
+      - management
   cloud:
     services:
       registrationMethod: route
@@ -10,3 +11,11 @@ spring:
       uri: https://pr-microservice-config-server.herokuapp.com
       label: master
       fail-fast: true
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
