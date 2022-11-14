@@ -13,11 +13,9 @@ spring:
       fail-fast: true
 
 eureka:
-  instance:
-    hostname: prd-eureka-server
   client:
-    serviceUrl:
-      defaultZone: https://prd-eureka.onrender.com/eureka
+    register-with-eureka: false
+    fetch-registry: false
 
 management:
   endpoints:
