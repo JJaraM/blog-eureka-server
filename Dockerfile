@@ -14,7 +14,7 @@ RUN --mount=type=secret,id=settings_xml,dst=/etc/secrets/settings.xml \
   mvn -s /etc/secrets/settings.xml clean install
 
 FROM openjdk
-EXPOSE 8080
+EXPOSE 8761
 
 COPY --from=maven_build /tmp/target/app.jar /data/app.jar
 ENTRYPOINT ["java","-jar", "/data/app.jar"]
