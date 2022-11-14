@@ -1,3 +1,6 @@
+server:
+  port: 8761
+  
 spring:
   profiles:
     active:
@@ -7,7 +10,7 @@ spring:
     services:
       registrationMethod: route
     config:
-      enabled: true
+      enabled: false
       uri: https://pr-microservice-config-server.herokuapp.com
       label: master
       fail-fast: true
