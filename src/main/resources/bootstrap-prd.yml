@@ -17,7 +17,7 @@ eureka:
     hostname: prd-eureka-server
   client:
     serviceUrl:
-      defaultZone: https://prd-eureka-server.herokuapp.com/eureka
+      defaultZone: https://prd-eureka.onrender.com/eureka
 
 management:
   endpoints:
