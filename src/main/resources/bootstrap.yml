@@ -1,11 +1,17 @@
 server:
   port: 8761
-
-debug: true
-
-logging.level.root: INFO
+spring:
+  application:
+    name: eureka
 
 eureka:
   client:
-    fetchRegistry: false
     registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
