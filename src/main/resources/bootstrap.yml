@@ -3,7 +3,7 @@ server:
 
 debug: true
 
-logging.level.root: DEBUG
+logging.level.root: INFO
 
 eureka:
   client:
