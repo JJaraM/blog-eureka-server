@@ -1,6 +1,8 @@
 server:
   port: 8761
 
+debug: true
+
 eureka:
   client:
     fetchRegistry: false
