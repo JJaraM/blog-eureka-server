@@ -3,6 +3,8 @@ server:
 
 debug: true
 
+logging.level.root: DEBUG
+
 eureka:
   client:
     fetchRegistry: false
